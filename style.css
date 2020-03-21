@@ -37,6 +37,8 @@ body {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-dark);
   border: 2px solid var(--color-main);
+  border-top: 2rem solid var(--color-main);
+  border-bottom: 2rem solid var(--color-main);
   display: flex;
   flex-direction: column;
   align-items: center;
