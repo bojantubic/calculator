@@ -33,7 +33,7 @@ body {
 .calculator {
   width: 25rem;
   height: 50rem;
-  background-color: var(--color-black);
+  background-color: var(--color-main);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-dark);
   border: 2px solid var(--color-main);
@@ -55,6 +55,8 @@ body {
   background-color: var(--color-grey);
   border: none;
   outline: none;
+  border-top: 5px;
+  border-radius: 5px 5px 0 0;
   box-shadow: var(--box-shadow-light);
 }
 
@@ -66,6 +68,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--color-black);
+  border-radius: 0 0 5px 5px;
 }
 
 .row {
@@ -84,7 +88,7 @@ body {
   border-radius: 50%;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--box-shadow-light);
   cursor: pointer;
   transition: all 0.1s ease;
 }
@@ -96,7 +100,7 @@ body {
 
 .btn:active {
   background-color: var(--color-main);
-  box-shadow: var(--box-shadow-light);
+  box-shadow: none;
 }
 
 .btn-operator {
@@ -114,11 +118,15 @@ body {
 .btn-equal {
   color: var(--color-white);
   background-color: var(--color-main);
-  v
+  border: 3px solid var(--color-main);
 }
 
 .btn-equal:hover {
   background-color: var(--color-main);
+}
+
+.btn-equal:active {
+  border: 3px solid var(--color-white);
 }
 
 .btn-clear {
