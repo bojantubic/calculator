@@ -55,6 +55,7 @@ body {
   background-color: var(--color-grey);
   border: none;
   outline: none;
+  box-shadow: var(--box-shadow-dark);
 }
 
 .block {
