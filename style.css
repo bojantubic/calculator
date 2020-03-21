@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-main: rgb(127, 103, 248);
+  --color-black: #212327;
+  --color-grey: #303236;
+  --color-white: #fff;
+  --border-radius: 5px;
+
+  --box-shadow-dark: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  --box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(127, 103, 248, 0.3);
+}
+
+.calculator {
+  width: 25rem;
+  height: 45rem;
+  background-color: var(--color-black);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-dark);
+  border: 2px solid var(--color-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen {
+  height: 12rem;
+  width: 100%;
+  padding: 2rem;
+  font-size: 2.5rem;
+  text-align: right;
+  font-family: inherit;
+  color: var(--color-white);
+  background-color: var(--color-grey);
+  border: none;
+  outline: none;
+}
+
+.block {
+  height: 38rem;
+  width: 100%;
+  display: flex;
+  padding: 2rem 2rem 2rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 4.2rem;
+  height: 4.2rem;
+  font-size: 1.8rem;
+  background-color: var(--color-grey);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: var(--color-white);
+  box-shadow: var(--box-shadow-dark);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn:hover {
+  background-color: rgba(127, 103, 248, 0.5);
+  color: var(--color-white);
+}
+
+.btn:active {
+  background-color: var(--color-main);
+  box-shadow: var(--box-shadow-light);
+}
+
+.btn-operator {
+  color: var(--color-main);
+}
+
+.btn-disabled {
+  opacity: 0;
+}
+
+.btn-faded {
+  color: #777;
+}
+
+.btn-equal {
+  color: var(--color-white);
+  background-color: var(--color-main);
+  v
+}
+
+.btn-equal:hover {
+  background-color: var(--color-main);
+}
+
+.btn-clear {
+  color: var(--color-main);
+  border: 2px solid var(--color-main);
+  font-weight: bold;
+}
+
+.btn-clear:hover {
+  color: var(--color-white);
+}
