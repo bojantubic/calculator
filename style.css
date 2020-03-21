@@ -77,11 +77,12 @@ body {
   width: 4.2rem;
   height: 4.2rem;
   font-size: 1.8rem;
+  color: var(--color-white);
   background-color: var(--color-grey);
   border: none;
   border-radius: 50%;
   outline: none;
-  color: var(--color-white);
+  -webkit-tap-highlight-color: transparent;
   box-shadow: var(--box-shadow-dark);
   cursor: pointer;
   transition: all 0.1s ease;
