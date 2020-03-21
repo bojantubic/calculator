@@ -32,7 +32,7 @@ body {
 
 .calculator {
   width: 25rem;
-  height: 45rem;
+  height: 50rem;
   background-color: var(--color-black);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-dark);
@@ -45,7 +45,7 @@ body {
 }
 
 .screen {
-  height: 12rem;
+  height: 15rem;
   width: 100%;
   padding: 2rem;
   font-size: 2.5rem;
@@ -58,7 +58,7 @@ body {
 }
 
 .block {
-  height: 38rem;
+  height: 34rem;
   width: 100%;
   display: flex;
   padding: 2rem 2rem 2rem 2rem;
